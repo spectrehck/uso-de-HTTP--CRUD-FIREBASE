@@ -1,0 +1,42 @@
+<h3>Celular</h3>
+<hr>
+<button [routerLink]="['/celulares']" class="btn btn-outline-danger">Regresar</button>
+<br>
+<br>
+<div class="row animated fadeIn fast">
+    <div class="col-md-12">
+        <form (ngSubmit)="guardar()" #forma="ngForm">
+            <div class="form-group">
+                <label>Marca</label>
+                <select class="form-control">
+                            <option value="Apple">Apple</option>
+                            <option value="Samsung">Samsung</option>
+                            <option value="Motorola">Motorola</option>
+                            <option value="Nokia">Nokia</option>
+                            <option value="Xiaomi">Xiaomi</option>
+                            <option value="Huawei">Huawei</option>
+                            <option value="LG">LG</option>
+        
+                        </select>
+            </div>
+            <div class="form-group">
+                <label>Nombre</label>
+                <input type="text" class="form-control" placeholder="Nombre del Celular" required>
+            </div>
+            <div class="form-group">
+                <label>Cantidad</label>
+                <input type="text" class="form-control" placeholder="Nro" required>
+            </div>
+            <div class="form-group">
+                <label>Precio</label>
+                <input type="number" class="form-control" placeholder="S/" required>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-outline-primary">Imgresar</button>
+            </div>
+
+
+        </form>
+    </div>
+</div>
